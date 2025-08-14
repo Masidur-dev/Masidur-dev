@@ -96,11 +96,11 @@
   <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/telegram/default.svg" width="38" height="19" alt="telegram logo"  />
 </div>
 
-### Watch Snake Eating My Githuub Contributins
+### Watch Snake Eating My Githuub Contributins:
 
 <img src="https://raw.githubusercontent.com/Masidur-dev/Masidur-dev/output/snake.svg" alt="Snake animation" />
 
-###
+###  Watch Pacman Eating My Githuub Contributins:
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Masidur-dev/Masidur-dev/output/pacman-contribution-graph-dark.svg">
@@ -115,6 +115,7 @@
 </div>
 
 ###
+
 
 
 

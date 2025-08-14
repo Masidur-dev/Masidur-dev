@@ -85,7 +85,7 @@
   <a href="https://x.com/MasidurDev" target="_blank">
     <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/twitter/default.svg" width="38" height="19" alt="twitter logo"  />
   </a>
-  <a href="instagram.com/masud_siuuu" target="_blank">
+  <a href="https://www.instagram.com/masud_siuuu/" target="_blank">
     <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/instagram/default.svg" width="38" height="19" alt="instagram logo"  />
   </a>
   <a href="hello.masidur.dev@gmail.com" target="_blank">
@@ -115,3 +115,4 @@
 </div>
 
 ###
+

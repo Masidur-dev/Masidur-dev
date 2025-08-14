@@ -100,7 +100,7 @@
 
 <img src="https://raw.githubusercontent.com/Masidur-dev/Masidur-dev/output/snake.svg" alt="Snake animation" />
 
-## 🕹️ Watch Pacman Eat My GitHub Contributions
+
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Masidur-dev/Masidur-dev/output/pacman-contribution-graph-dark.svg">
@@ -115,6 +115,7 @@
 </div>
 
 ###
+
 
 
 

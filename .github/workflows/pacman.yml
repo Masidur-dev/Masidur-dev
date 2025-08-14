@@ -1,33 +1,29 @@
-name: Generate Pacman Contribution Graph
+name: Generate Pacman Animation
 
 on:
-  schedule:
-    # Run every 12 hours
+  schedule: # runs every 12 hours
     - cron: "0 */12 * * *"
-
   workflow_dispatch:
 
-  push:
-    branches:
-      - main
+permissions:
+  contents: write
 
 jobs:
-  generate:
+  build:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
-    permissions:
-      contents: write
-
     steps:
-      - name: Generate Pacman Contribution Graph
-        uses: abozanona/pacman-contribution-graph@main
-        with:
-          github_user_name: Masidur-dev
+      - name: Checkout
+        uses: actions/checkout@v3
 
-      - name: Push to output branch
-        uses: crazy-max/ghaction-github-pages@v3.1.0
+      - name: Generate Pacman SVG
+        uses: abozanona/pacman@v2
         with:
-          target_branch: output
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit SVG
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add output/
+          git commit -m "Update Pacman graph" || echo "No changes to commit"
+          git push

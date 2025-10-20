@@ -104,10 +104,18 @@
 ###
 
 <picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Masidur-dev/Masidur-dev/output/snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Masidur-dev/Masidur-dev/output/snake-light.svg">
+  <img alt="Snake animation" src="https://raw.githubusercontent.com/Masidur-dev/Masidur-dev/output/snake-light.svg">
+</picture>
+
+<picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Masidur-dev/Masidur-dev/output/pacman-contribution-graph-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Masidur-dev/Masidur-dev/output/pacman-contribution-graph.svg">
-  <img alt="Pacman eating my GitHub contributions" src="https://raw.githubusercontent.com/Masidur-dev/Masidur-dev/output/pacman-contribution-graph.svg">
+  <img alt="Pacman animation" src="https://raw.githubusercontent.com/Masidur-dev/Masidur-dev/output/pacman-contribution-graph.svg">
 </picture>
+
+
 
 ###
 
@@ -116,6 +124,7 @@
 </div>
 
 ###
+
 
 
 

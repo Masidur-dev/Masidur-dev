@@ -98,11 +98,6 @@
 
 ### My Githuub Contributions:
 
-<img src="https://raw.githubusercontent.com/Masidur-dev/Masidur-dev/output/snake.svg" alt="Snake animation" />
-
-
-###
-
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Masidur-dev/Masidur-dev/output/snake-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Masidur-dev/Masidur-dev/output/snake-light.svg">
@@ -124,6 +119,7 @@
 </div>
 
 ###
+
 
 
 

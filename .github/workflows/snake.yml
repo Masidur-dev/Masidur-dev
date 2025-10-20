@@ -1,0 +1,41 @@
+name: Generate snake animation
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Generate snake light mode
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: Masidur-dev
+          outputs: dist/snake-light.svg?palette=github-light
+
+      - name: Generate snake dark mode
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: Masidur-dev
+          outputs: dist/snake-dark.svg?palette=github-dark
+
+      - name: Push snake SVGs to output branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: output
+          build_dir: dist
+          keep_history: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
